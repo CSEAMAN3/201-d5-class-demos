@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My 201 0a demo</title>
+    <meta name="description" content="This is my page about the 201 01" />
+    <link rel="stylesheet" href="reset.css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        min-width: 320px;
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: 0.01em;
+        line-height: 1.6;
+        color: black;
+        background-color: white;
+      }
+
+      .container {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      header {
+        background-color: pink;
+      }
+
+      .header-container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+
+      h1 {
+        color: darkcyan;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      ul li {
+        display: inline-block;
+      }
+
+      a {
+        text-decoration: none;
+        margin: 0 1rem;
+      }
+
+      a:hover {
+        color: white;
+      }
+
+      @media (min-width: 600px) {
+        .header-container {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: baseline;
+        }
+        h1 {
+          margin-bottom: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container header-container">
+        <h1>My Page</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="main-container container"></div>
+    </main>
+    <footer>
+      <div class="footer-container container"></div>
+    </footer>
+    <script>
+      console.log("I can confirm that this log has logged");
+
+      let user;
+      let myFavColor;
+      let color;
+
+      alert("Hi, I'm Chris, welcome to my site!");
+
+      function userName() {
+        user = prompt("Please tell me your name so we can get to know one another");
+        alert("Welcome to my site " + user);
+        console.log(user);
+      }
+
+      userName();
+
+      function favColor() {
+        color = prompt(user + " , what is your fav color?").toLowerCase();
+        console.log(color);
+
+        if (color === "red") {
+          myFavColor = "green";
+        } else if (color === "blue") {
+          myFavColor = "Orange";
+        } else {
+          myFavColor = "Tomato";
+        }
+
+        alert("Nice, " + color + " is a great color. My favourite color is " + myFavColor);
+      }
+
+      favColor();
+    </script>
+  </body>
+</html>
