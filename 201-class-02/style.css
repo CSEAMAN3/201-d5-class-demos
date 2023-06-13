@@ -1,0 +1,104 @@
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Kablammo', cursive;
+font-family: 'Poppins', sans-serif; */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* :root represents the <html> element and is identical to the selector html, except that its specificity is higher */
+
+:root {
+  /* Using CSS Custom properties */
+  --grn: #606c5d;
+  --pnk: #fff4f4;
+  --beige: #f7e6c4;
+  --yel: #f1c376;
+  --mainbackgroundcolor: #f1c376;
+}
+
+/* 
+Useful websites for color
+
+Great site for gradients
+https://cssgradient.io/gradient-backgrounds/
+example code:
+background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 53%, #FFCC70 100%);
+
+grabient
+https://www.grabient.com/
+
+uiGradients
+https://uigradients.com
+
+coolers
+https://coolors.co/071e22-553739-acc18a-f0d2d1-d5cad6
+
+color hunt
+https://colorhunt.co/palettes
+
+*/
+
+body {
+  min-width: 320px;
+  font-family: "Kablammo", cursive;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+}
+
+section {
+  width: 90%;
+  margin: 2rem auto;
+  background-color: var(--mainbackgroundcolor);
+  /* background-color: #606c5d; */
+  margin-bottom: 2rem;
+  min-height: 100px;
+}
+
+aside {
+  background-color: var(--mainbackgroundcolor);
+  /* background-color: #606c5d; */
+  min-height: 100px;
+}
+
+div {
+  background-color: var(--mainbackgroundcolor);
+  /* background-color: #606c5d */
+  min-height: 100px;
+}
+
+h1 {
+  background-color: var(--mainbackgroundcolor);
+  /* background-color: #606c5d; */
+  color: var(--pnk);
+}
+
+p {
+  color: white;
+}
+
+.content {
+  color: var(--grn);
+}
+
+#more-content {
+  background-color: var(--grn);
+}
+
+section ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+section ol {
+  list-style: number;
+}
+
+section li {
+  background-color: var(--pnk);
+  margin-bottom: 1rem;
+  padding: 2rem;
+}
