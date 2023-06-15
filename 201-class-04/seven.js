@@ -1,10 +1,10 @@
-let locations = ["norwich", "cambridge", "liverpool"];
+const locations = ["norwich", "cambridge", "liverpool"];
 
 for (let i = 5; i >= 0; i--) {
   let winner = false;
   console.log(winner);
 
-  let attempts = i + 1;
+  const attempts = i + 1;
 
   let city = prompt(
     "Name one the locations Tech Educators currently offer a coding bootcamp? You have " + attempts + " attempts"
