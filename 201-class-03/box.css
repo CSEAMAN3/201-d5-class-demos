@@ -1,0 +1,31 @@
+* {
+  border: 1px solid black;
+  font-family: sans-serif;
+  /* box-sizing: border-box; */
+}
+
+.inline-p {
+  display: inline-block;
+}
+
+#px-div {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  /* padding: 10px; */
+}
+
+#pct-div {
+  width: 90%;
+  height: 90%;
+  background-color: tan;
+}
+
+#overflow-box {
+  max-height: 100px;
+  overflow: scroll;
+}
+
+#bmp-box {
+  padding: 20px 10px 30px 40px;
+}
