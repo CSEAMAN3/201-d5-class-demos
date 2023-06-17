@@ -29,3 +29,24 @@ for (let i = 5; i >= 0; i--) {
     break;
   }
 }
+
+("The sum of 4 and 7 is 11.");
+
+function myFunc(a, b) {
+  let mySum = a + b;
+  let message = "The sum of " + 4 + " and " + 7 + " is " + 11 + ".";
+  return [mySum, message];
+}
+
+function myFunc2() {
+  let sum = myFunc(5, 5)[0];
+  console.log(sum);
+}
+
+10;
+
+// myFunc(4, 7)
+
+// const myArr = ["dog", "cat", "pig"]
+
+// console.log(myArr[3])
