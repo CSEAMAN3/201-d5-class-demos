@@ -47,3 +47,16 @@ Therefore you should declare a variable named hours at the top of app.js (outsid
 ```javascript
 const hours = ["6am", "7am", "8am",......ect]
 ```
+
+- outside of the object create a function that generates a random number for customers per hour based on the minCustPerHour and maxCustPerHour object properties. This should have parameters of min and max to take arguments when invoked.
+
+- remove the elements from the following arrays to make them empty arrays:
+
+  - customersEachHour - set this to an empty array
+  - cookiesEachHour - set this to an empty array
+    Also set:
+  - totalDailyCookies - initialise this as 0
+
+- inside the object create the following methods:
+  - calcCustomersEachHour
+  - calcCookiesEachHour
