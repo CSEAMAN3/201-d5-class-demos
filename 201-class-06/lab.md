@@ -58,5 +58,33 @@ const hours = ["6am", "7am", "8am",......ect]
   - totalDailyCookies - initialise this as 0
 
 - inside the object create the following methods:
+
   - calcCustomersEachHour
   - calcCookiesEachHour
+
+- The calcCustomersEachHour method should:
+
+  - use a loop
+  - an array method
+  - the random Number function
+
+- the calcCookiesEachHour method should:
+
+  - invoke the calcCustomersEachHour
+  - use a loop
+  - have a variable that stores the product of the number customer for the hour by the avgCookiesPerCust
+  - use an array method to add the variable to the cookiesEachHour array
+  - use an operator to reassign the value of totalDailyCookies based on the variable the stores the product of the number customer for the hour by the avgCookiesPerCust- The calcCustomersEachHour method should:
+  - use a loop
+  - an array method
+  - the random Number function
+
+- the calcCookiesEachHour method should:
+
+  - invoke the calcCustomersEachHour
+  - use a loop
+  - have a variable that stores the product of the number customer for the hour by the avgCookiesPerCust
+  - use an array method to add the variable to the cookiesEachHour array
+  - use an operator to reassign the value of totalDailyCookies based on the variable the stores the product of the number customer for the hour by the avgCookiesPerCust
+
+- Your render method should invoke the the calcCustomersEachHour and then the calcCookiesEachHour as the first thing it does before doing any of the dom manipulation.
