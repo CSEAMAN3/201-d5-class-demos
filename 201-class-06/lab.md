@@ -23,3 +23,18 @@
     - totalDailyCookies - initialise this to number - the number is all your numbers from cookiesEachHour added together.
 
     Note: The properties above should have hard coded values at this stage.
+
+  In your html file:
+
+  - inside the body element nest a div and give it an id of container.
+
+  In your app.js file:
+
+  - at the top of the file declare a variable that get the div element by its id container
+
+  - create a render method inside your object that:
+    - performs dom manipulation to create:
+      - article - as a container
+      - h3 - store title
+      - ul for the list of hours and cookies sold
+      - a loop to create each list item
