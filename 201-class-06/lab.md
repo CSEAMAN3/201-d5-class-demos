@@ -38,3 +38,10 @@
       - h3 - store title
       - ul for the list of hours and cookies sold
       - a loop to create each list item
+
+Note: Your list items should read for example 6am: 16 cookies.  
+Therefore you should declare a variable named hours at the top of app.js (outside of your object not inside your object). This should be eqaul to an array that stores strings for each hour the store is open. Example:
+
+```javascript
+const hours = ["6am", "7am", "8am",......ect]
+```
