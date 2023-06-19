@@ -32,12 +32,14 @@
 
   - at the top of the file declare a variable that get the div element by its id container
 
-  - create a render method inside your object that:
-    - performs dom manipulation to create:
-      - article - as a container
-      - h3 - store title
-      - ul for the list of hours and cookies sold
-      - a loop to create each list item
+NOTE IMPORTANT: add a storeName property to your object as the first key / value pair and set the value to the name of your object. for example storeName: "seattle"
+
+- create a render method inside your object that:
+  - performs dom manipulation to create:
+    - article - as a container
+    - h3 - store title
+    - ul for the list of hours and cookies sold
+    - a loop to create each list item
 
 Note: Your list items should read for example 6am: 16 cookies.  
 Therefore you should declare a variable named hours at the top of app.js (outside of your object not inside your object). This should be eqaul to an array that stores strings for each hour the store is open. Example:
