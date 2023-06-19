@@ -70,7 +70,8 @@ h3.textContent = cat.name;
 article.appendChild(h3);
 
 const p = document.createElement("p");
-p.textContent = cat.name + " is adorable, and is " + cat.age + " old.";
+// p.textContent = cat.name + " is adorable, and is " + cat.age + " old.";
+p.textContent = `${cat.name} is adorable, and is ${cat.age} old.`;
 article.appendChild(p);
 
 const ul = document.createElement("ul");
