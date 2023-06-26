@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>201 Class 11 Demo</title>
+    <meta name="description" content="This is the demo for class 11 of the 201" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Audio Video Elements</h1>
+    </header>
+    <main class="grid">
+      <section>
+        <h2>Audio</h2>
+        <!-- <audio src="assets/levees.m4a" muted controls autoplay loop></audio> -->
+        <audio id="levees" src="assets/levees.m4a" controls></audio>
+        <ul>
+          <li>Autoplay: Boolean; use sparingly</li>
+          <li>controls: provide playback controls to user</li>
+          <li>loop: Boolean; will play audio over and over</li>
+          <li>muted: Boolean; use to mute audio on page load</li>
+          <li>src: link to the audio source file</li>
+          <li>volume: Range of 0.0(silent) to 1.0(loudest)</li>
+        </ul>
+        <button id="randomizer">Set Random Volume</button>
+      </section>
+      <section>
+        <h2>Video</h2>
+        <video id="demi" src="assets/demi.mov" width="400" height="220" muted controls autoplay></video>
+      </section>
+    </main>
+    <footer>&#169; Tech Ed</footer>
+    <script src="app.js"></script>
+  </body>
+</html>
