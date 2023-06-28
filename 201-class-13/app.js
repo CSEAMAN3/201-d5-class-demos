@@ -61,3 +61,4 @@ function pageLoad() {
 }
 pageLoad();
 // localStorage.clear();
+// localStorage.removeItem()
