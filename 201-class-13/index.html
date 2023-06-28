@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage Demo</title>
+    <meta name="description" content="this is the local storage demo" />
+    <!-- <link rel="stylesheet" href="reset.css" /> -->
+    <link rel="stylesheet" href="ls.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="welcome">Welcome</h1>
+      <form>
+        <label for="dark">
+          <input type="radio" name="mode" id="darkButton" class="mode" value="dark" />
+          <span>Dark Mode</span>
+        </label>
+        <label for="light">
+          <input type="radio" name="mode" id="lightButton" class="mode" value="light" checked />
+          <span>Light Mode</span>
+        </label>
+      </form>
+
+      <article>
+        <!-- creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state. A summary or label must be provided using the <summary> element. -->
+        <details>
+          <summary>Section 1</summary>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta nemo velit excepturi dolor minus natus quo,
+            dolore, quidem reprehenderit aspernatur est atque ex iste at distinctio veniam officiis similique sequi sunt nam
+            ullam nostrum sapiente. Tempore alias laboriosam enim expedita deserunt deleniti dignissimos, vel nisi voluptas
+            esse, ullam dicta assumenda?
+          </p>
+        </details>
+        <details>
+          <summary>Section 2</summary>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at, ea in corrupti inventore perferendis quod illum
+            culpa odit voluptates, nihil iure alias corporis laudantium eveniet non fuga. Fugit voluptates, sint praesentium
+            natus, nam laboriosam repudiandae odio ad reiciendis ea temporibus non excepturi molestias autem, dignissimos
+            totam quisquam labore! Dignissimos?
+          </p>
+        </details>
+        <details>
+          <summary>Section 3</summary>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi dolore architecto fugiat ipsum reiciendis
+            exercitationem repudiandae dicta nemo quibusdam unde velit sapiente quia voluptates quod non eius aperiam est
+            odio tempora nihil adipisci quas dolorum, delectus vel. Commodi porro voluptatem deleniti impedit, reprehenderit
+            adipisci exercitationem corporis reiciendis, vitae quasi accusantium?
+          </p>
+        </details>
+      </article>
+      <p>Leave a comment</p>
+      <textarea name="" id="commentBox" cols="30" rows="10"></textarea>
+    </div>
+
+    <script src="ls.js"></script>
+  </body>
+</html>
