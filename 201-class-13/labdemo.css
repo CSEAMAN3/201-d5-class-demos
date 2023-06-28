@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  background-color: cornsilk;
+  color: saddlebrown;
+}
+
+main {
+  width: 1024px;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 250px 4fr;
+  grid-template-rows: 6.5rem 10rem 20rem 40%;
+}
+
+#siteLogo {
+  width: 250px;
+  z-index: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-row-end: 3;
+}
+
+h1 {
+  font-size: 5rem;
+  z-index: 1;
+  color: rosybrown;
+  line-height: 0.8;
+  /* margin top, margin left and right, margin bottom */
+  margin: 3rem 0 1rem;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+section {
+  /* this element will be a grid item but also a flex container */
+  background-color: rgb(211, 187, 176, 0.3);
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+section img {
+  width: 460px;
+  max-height: 26rem;
+  /* 
+  aide accessibility by preventing layout shift by 
+  adding a transparent border when a border is added 
+  in :hover styles
+  */
+  border: 5px solid transparent;
+}
+
+section img:hover {
+  border: 5px solid rosybrown;
+  cursor: pointer;
+}
+
+section.no-voting img:hover {
+  border: 5px solid transparent;
+  /* cursor: not-allowed; */
+  pointer-events: none;
+}
+
+section + div {
+  background-color: darkgrey;
+  color: lightgrey;
+  padding: 0.5rem 1rem;
+  width: max-content;
+  height: max-content;
+  font-size: 0.8rem;
+  margin: 1rem;
+  pointer-events: none;
+  /* cursor: not-allowed; */
+}
+
+section + div.clicks-allowed {
+  background-color: rosybrown;
+  color: white;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+section + div.clicks-allowed:hover {
+  background-color: rgb(211, 187, 175);
+}
+
+ul {
+  margin: 1rem 0;
+}
+
+li {
+  line-height: 1.6;
+}
+
+canvas {
+  width: 75%;
+  height: 500px;
+}
